@@ -112,7 +112,7 @@ section.services h1 {
 /* Call To Action Selectors (index.html) */
 
 section.cta {
-	background-image: url(C:/Users/kingmoc/Documents/git/User-Interface/great-idea-website/img/header-img.png);
+	background-image: url("../img/header-img.png");
     background-repeat: no-repeat;
     background-position: 90%;
     background-size: contain;
@@ -145,10 +145,11 @@ section.cta div h1 {
 /* Main Content Selectors (index.html) */
 
 section.main-content {
-	background-image: url("C:/Users/kingmoc/Documents/git/User-Interface/great-idea-website/img/mid-page-accent.jpg");
+	background-image: url("../img/mid-page-accent.jpg");
     background-repeat: no-repeat;
     background-position: 42% 42%;
 }
+
 
 /* Top/Bottom Content Selectors */
 
