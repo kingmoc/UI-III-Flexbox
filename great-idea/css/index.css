@@ -67,17 +67,15 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
+/* Main Container */
+
 .container {
 	width: 1000px;
 	margin: auto;
 	border: 1px solid gray;
 }
 
-.line {
-	margin-top: 30px;
-    margin-bottom: 40px;
-    border-top: 1px solid black;
-}
+/* Header Section Selectors */
 
 header {
 	background-color: lightblue;
@@ -85,19 +83,33 @@ header {
     display: flex;
     align-items: center;
 	justify-content: space-around;
-	
 }
 
 header nav {
 	font-size: 24px;
 }
 
-
 header nav a {
 	margin: 12px;
 	text-decoration-line: none;
     color: black;
 }
+
+/* Services Section Selectors (services html) */
+
+.services-info-img {
+	width: 600px;
+}
+
+section.services {
+	margin-top: 25px;
+}
+
+section.services h1 {
+	font-size: 28px;
+}
+
+/* Call To Action Selectors (index.html) */
 
 section.cta {
 	background-image: url(C:/Users/kingmoc/Documents/git/User-Interface/great-idea-website/img/header-img.png);
@@ -130,19 +142,34 @@ section.cta div h1 {
     text-align: center;
 }
 
+/* Main Content Selectors (index.html) */
+
 section.main-content {
 	background-image: url("C:/Users/kingmoc/Documents/git/User-Interface/great-idea-website/img/mid-page-accent.jpg");
     background-repeat: no-repeat;
     background-position: 42% 42%;
 }
 
-section.services {
-	margin-top: 25px;
+/* Top/Bottom Content Selectors */
+
+.top-content {
+	display: flex;
 }
 
-section.services h1 {
-	font-size: 28px;
+.bottom-content {
+	display: flex;
 }
+
+.bottom-content .text-content {
+	margin-right: 35px;
+}
+
+div.bottom-content {
+	margin-top: 235px;
+}
+
+
+/* Service Info Selectors */
 
 section.service-info {
 	display: flex;
@@ -163,13 +190,16 @@ section.service-info .info-box {
     padding: 15px;
 }
 
-.info-box button {
-	border-radius: 5px;
-    width: 122px;
-    height: 30px;
-    background-color: white;
-    border: 1px solid black;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+/* Facts Selectors */
+
+.facts ul {
+	list-style-type:square;
+	list-style-position: inside;
+}
+
+.factsText ul li {
+	margin-bottom: 10px;
 }
 
 .facts {
@@ -186,35 +216,8 @@ section.service-info .info-box {
     margin-bottom: 20px;
 }
 
-.info-box p {
-	margin-bottom: 25px;
-    line-height: 20px;
-}
 
-.facts ul {
-	list-style-type:square;
-	list-style-position: inside;
-}
-
-.factsText ul li {
-	margin-bottom: 10px;
-}
-
-.top-content {
-	display: flex;
-}
-
-.bottom-content {
-	display: flex;
-}
-
-.bottom-content .text-content {
-	margin-right: 35px;
-}
-
-div.bottom-content {
-	margin-top: 235px;
-}
+/* Footer Selectors */
 
 footer p.copyright {
 	margin-top: 40px;
@@ -228,3 +231,102 @@ footer section address {
 footer section p {
 	line-height: 30px;
 }
+
+/* Other Selectors */
+
+
+.line {
+	margin-top: 30px;
+    margin-bottom: 40px;
+    border-top: 1px solid black;
+}
+
+.info-box button {
+	border-radius: 5px;
+    width: 122px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.info-box p {
+	margin-bottom: 25px;
+    line-height: 20px;
+}
+
+
+
+
+/* Media Queries  */
+
+/* If the screen size is 600px or less, */
+@media only screen and (max-width: 600px) {
+	section.service-info {
+	  height: auto;
+	  flex-flow: column nowrap;
+	  align-items: center;
+	}
+  }
+  
+/* If the screen size is 600px or less, */
+@media only screen and (max-width: 600px) {
+	section.service-info .info-box {
+		margin-bottom: 20px;
+		width: 600px;
+	}
+  }
+
+
+/* If the screen size is 600px or less, */
+@media only screen and (max-width: 600px) {
+	.info-box button {
+		margin-left: 150px;
+		margin-top: 30px;
+		font-size: 35px;
+		width: 225px;
+		height: fit-content;
+	}
+  }
+  
+/* If the screen size is 600px or less, */
+@media only screen and (max-width: 600px) {
+	.facts {
+	  height: auto;
+	  flex-flow: column nowrap;
+	  align-items: center;
+	}
+}
+	
+	
+/* If the screen size is 600px or less, */
+@media only screen and (max-width: 600px) {
+	.facts .factsText {
+		width: 600px;
+		margin-bottom: 40px;
+	}
+} 
+
+/* If the screen size is 600px or less, */
+@media only screen and (max-width: 600px){
+	footer .contact {
+		height: auto;
+		flex-flow: column nowrap;
+		align-items: center;
+		display: flex;
+    	justify-content: space-between;
+	}
+}
+
+/* If the screen size is 600px or less, */
+@media only screen and (max-width: 600px){
+	.services {
+		display: flex;
+		height: auto;
+		flex-flow: column nowrap;
+		align-items: center;
+		width: 600px;
+		margin-left: 135px;
+	}
+}
+
