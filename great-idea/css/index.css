@@ -54,7 +54,9 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
+	width: 876px;
+    margin: auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -64,3 +66,165 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width: 1000px;
+	margin: auto;
+	border: 1px solid gray;
+}
+
+.line {
+	margin-top: 30px;
+    margin-bottom: 40px;
+    border-top: 1px solid black;
+}
+
+header {
+	background-color: lightblue;
+    height: 100px;
+    display: flex;
+    align-items: center;
+	justify-content: space-around;
+	
+}
+
+header nav {
+	font-size: 24px;
+}
+
+
+header nav a {
+	margin: 12px;
+	text-decoration-line: none;
+    color: black;
+}
+
+section.cta {
+	background-image: url(C:/Users/kingmoc/Documents/git/User-Interface/great-idea-website/img/header-img.png);
+    background-repeat: no-repeat;
+    background-position: 90%;
+    background-size: contain;
+    margin-top: 38px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cta-text button {
+	font-size: 21px;
+    padding: 9px;
+    width: 206px;
+	background-color: white;
+    color: black;
+	border: 1px solid black;
+	margin-left: 53px;
+    margin-top: 19px;
+}
+	
+.cta-text {
+	margin-left: 84px;
+}
+
+section.cta div h1 {
+	font-size: 80px;
+    text-align: center;
+}
+
+section.main-content {
+	background-image: url("C:/Users/kingmoc/Documents/git/User-Interface/great-idea-website/img/mid-page-accent.jpg");
+    background-repeat: no-repeat;
+    background-position: 42% 42%;
+}
+
+section.services {
+	margin-top: 25px;
+}
+
+section.services h1 {
+	font-size: 28px;
+}
+
+section.service-info {
+	display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-between;
+    height: 860px;;
+}
+
+section.service-info .info-box {
+	background: #f4f3f4;
+    width: 48%;
+    height: 250px;
+	border: 1px solid black;
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+}
+
+.info-box button {
+	border-radius: 5px;
+    width: 122px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.facts {
+	display: flex;
+	justify-content: space-between;
+}
+
+.facts .factsText {
+	width: 420px;
+}
+
+.factsText p {
+	line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.info-box p {
+	margin-bottom: 25px;
+    line-height: 20px;
+}
+
+.facts ul {
+	list-style-type:square;
+	list-style-position: inside;
+}
+
+.factsText ul li {
+	margin-bottom: 10px;
+}
+
+.top-content {
+	display: flex;
+}
+
+.bottom-content {
+	display: flex;
+}
+
+.bottom-content .text-content {
+	margin-right: 35px;
+}
+
+div.bottom-content {
+	margin-top: 235px;
+}
+
+footer p.copyright {
+	margin-top: 40px;
+	text-align: center;
+}
+
+footer section address {
+	margin-bottom: 20px;
+}
+
+footer section p {
+	line-height: 30px;
+}
